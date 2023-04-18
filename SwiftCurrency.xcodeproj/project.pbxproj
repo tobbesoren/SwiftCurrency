@@ -14,6 +14,11 @@
 		9CB372D229E7E7550083DCEE /* SwiftCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372D129E7E7550083DCEE /* SwiftCurrencyTests.swift */; };
 		9CB372DC29E7E7550083DCEE /* SwiftCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372DB29E7E7550083DCEE /* SwiftCurrencyUITests.swift */; };
 		9CB372DE29E7E7550083DCEE /* SwiftCurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372DD29E7E7550083DCEE /* SwiftCurrencyUITestsLaunchTests.swift */; };
+		9CB372ED29E7F1C40083DCEE /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372EC29E7F1C40083DCEE /* Currencies.swift */; };
+		9CB372EF29E7FA590083DCEE /* currency_list_of_the_world_plain.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9CB372EE29E7FA590083DCEE /* currency_list_of_the_world_plain.txt */; };
+		9CB372F129E95D780083DCEE /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372F029E95D780083DCEE /* Currency.swift */; };
+		9CB372F329EC3FC10083DCEE /* LatestExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372F229EC3FC10083DCEE /* LatestExchangeRates.swift */; };
+		9CB372F629EED4640083DCEE /* AccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372F529EED4640083DCEE /* AccessKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 		9CB372D729E7E7550083DCEE /* SwiftCurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB372DB29E7E7550083DCEE /* SwiftCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCurrencyUITests.swift; sourceTree = "<group>"; };
 		9CB372DD29E7E7550083DCEE /* SwiftCurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CB372EC29E7F1C40083DCEE /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		9CB372EE29E7FA590083DCEE /* currency_list_of_the_world_plain.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = currency_list_of_the_world_plain.txt; sourceTree = "<group>"; };
+		9CB372F029E95D780083DCEE /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		9CB372F229EC3FC10083DCEE /* LatestExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestExchangeRates.swift; sourceTree = "<group>"; };
+		9CB372F429EC64AF0083DCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CB372F529EED4640083DCEE /* AccessKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +105,16 @@
 		9CB372BF29E7E7530083DCEE /* SwiftCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				9CB372F429EC64AF0083DCEE /* Info.plist */,
 				9CB372C029E7E7530083DCEE /* SwiftCurrencyApp.swift */,
+				9CB372EE29E7FA590083DCEE /* currency_list_of_the_world_plain.txt */,
 				9CB372C229E7E7530083DCEE /* ContentView.swift */,
 				9CB372C429E7E7550083DCEE /* Assets.xcassets */,
 				9CB372C629E7E7550083DCEE /* Preview Content */,
+				9CB372EC29E7F1C40083DCEE /* Currencies.swift */,
+				9CB372F029E95D780083DCEE /* Currency.swift */,
+				9CB372F229EC3FC10083DCEE /* LatestExchangeRates.swift */,
+				9CB372F529EED4640083DCEE /* AccessKey.swift */,
 			);
 			path = SwiftCurrency;
 			sourceTree = "<group>";
@@ -232,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB372C829E7E7550083DCEE /* Preview Assets.xcassets in Resources */,
+				9CB372EF29E7FA590083DCEE /* currency_list_of_the_world_plain.txt in Resources */,
 				9CB372C529E7E7550083DCEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB372F129E95D780083DCEE /* Currency.swift in Sources */,
+				9CB372F629EED4640083DCEE /* AccessKey.swift in Sources */,
+				9CB372ED29E7F1C40083DCEE /* Currencies.swift in Sources */,
 				9CB372C329E7E7530083DCEE /* ContentView.swift in Sources */,
 				9CB372C129E7E7530083DCEE /* SwiftCurrencyApp.swift in Sources */,
+				9CB372F329EC3FC10083DCEE /* LatestExchangeRates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +442,7 @@
 				DEVELOPMENT_TEAM = BCAW25965Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftCurrency/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +472,7 @@
 				DEVELOPMENT_TEAM = BCAW25965Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftCurrency/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
